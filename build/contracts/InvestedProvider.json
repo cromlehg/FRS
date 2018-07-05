@@ -1,0 +1,298 @@
+{
+  "contractName": "InvestedProvider",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "invested",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipRenounced",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x608060405260008054600160a060020a03191633179055610243806100256000396000f3006080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663715018a681146100665780638da5cb5b1461007d578063cafb2202146100ae578063f2fde38b146100d5575b600080fd5b34801561007257600080fd5b5061007b6100f6565b005b34801561008957600080fd5b50610092610162565b60408051600160a060020a039092168252519081900360200190f35b3480156100ba57600080fd5b506100c3610171565b60408051918252519081900360200190f35b3480156100e157600080fd5b5061007b600160a060020a0360043516610177565b600054600160a060020a0316331461010d57600080fd5b60008054604051600160a060020a03909116917ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482091a26000805473ffffffffffffffffffffffffffffffffffffffff19169055565b600054600160a060020a031681565b60015481565b600054600160a060020a0316331461018e57600080fd5b6101978161019a565b50565b600160a060020a03811615156101af57600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03929092169190911790555600a165627a7a723058209065afc17f7caf46c9836ab121feecdae250e62943afa818eb51b7475d7121d20029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663715018a681146100665780638da5cb5b1461007d578063cafb2202146100ae578063f2fde38b146100d5575b600080fd5b34801561007257600080fd5b5061007b6100f6565b005b34801561008957600080fd5b50610092610162565b60408051600160a060020a039092168252519081900360200190f35b3480156100ba57600080fd5b506100c3610171565b60408051918252519081900360200190f35b3480156100e157600080fd5b5061007b600160a060020a0360043516610177565b600054600160a060020a0316331461010d57600080fd5b60008054604051600160a060020a03909116917ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482091a26000805473ffffffffffffffffffffffffffffffffffffffff19169055565b600054600160a060020a031681565b60015481565b600054600160a060020a0316331461018e57600080fd5b6101978161019a565b50565b600160a060020a03811615156101af57600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03929092169190911790555600a165627a7a723058209065afc17f7caf46c9836ab121feecdae250e62943afa818eb51b7475d7121d20029",
+  "sourceMap": "61:66:5:-;;;567:5:21;:18;;-1:-1:-1;;;;;;567:18:21;575:10;567:18;;;61:66:5;;;;;;",
+  "deployedSourceMap": "61:66:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1001:111:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1001:111:21;;;;;;238:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:21;;;;;;;;-1:-1:-1;;;;;238:20:21;;;;;;;;;;;;;;103::5;;8:9:-1;5:2;;;30:1;27;20:12;5:2;103:20:5;;;;;;;;;;;;;;;;;;;;1274:103:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1274:103:21;-1:-1:-1;;;;;1274:103:21;;;;;1001:111;719:5;;-1:-1:-1;;;;;719:5:21;705:10;:19;697:28;;;;;;1077:5;;;1058:25;;-1:-1:-1;;;;;1077:5:21;;;;1058:25;;;1105:1;1089:18;;-1:-1:-1;;1089:18:21;;;1001:111::o;238:20::-;;;-1:-1:-1;;;;;238:20:21;;:::o;103::5:-;;;;:::o;1274:103:21:-;719:5;;-1:-1:-1;;;;;719:5:21;705:10;:19;697:28;;;;;;1343:29;1362:9;1343:18;:29::i;:::-;1274:103;:::o;1512:171::-;-1:-1:-1;;;;;1582:23:21;;;;1574:32;;;;;;1638:5;;;1617:38;;-1:-1:-1;;;;;1617:38:21;;;;1638:5;;;1617:38;;;1661:5;:17;;-1:-1:-1;;1661:17:21;-1:-1:-1;;;;;1661:17:21;;;;;;;;;;1512:171::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport './ownership/Ownable.sol';\n\ncontract InvestedProvider is Ownable {\n\n  uint public invested;\n\n}\n\n",
+  "sourcePath": "/home/iceberg/projects/FRS/contracts/InvestedProvider.sol",
+  "ast": {
+    "absolutePath": "/home/iceberg/projects/FRS/contracts/InvestedProvider.sol",
+    "exportedSymbols": {
+      "InvestedProvider": [
+        705
+      ]
+    },
+    "id": 706,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 699,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/iceberg/projects/FRS/contracts/ownership/Ownable.sol",
+        "file": "./ownership/Ownable.sol",
+        "id": 700,
+        "nodeType": "ImportDirective",
+        "scope": 706,
+        "sourceUnit": 2164,
+        "src": "26:33:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 701,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2163,
+              "src": "90:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$2163",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 702,
+            "nodeType": "InheritanceSpecifier",
+            "src": "90:7:5"
+          }
+        ],
+        "contractDependencies": [
+          2163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 705,
+        "linearizedBaseContracts": [
+          705,
+          2163
+        ],
+        "name": "InvestedProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 704,
+            "name": "invested",
+            "nodeType": "VariableDeclaration",
+            "scope": 705,
+            "src": "103:20:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 703,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 706,
+        "src": "61:66:5"
+      }
+    ],
+    "src": "0:129:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/iceberg/projects/FRS/contracts/InvestedProvider.sol",
+    "exportedSymbols": {
+      "InvestedProvider": [
+        705
+      ]
+    },
+    "id": 706,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 699,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/home/iceberg/projects/FRS/contracts/ownership/Ownable.sol",
+        "file": "./ownership/Ownable.sol",
+        "id": 700,
+        "nodeType": "ImportDirective",
+        "scope": 706,
+        "sourceUnit": 2164,
+        "src": "26:33:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 701,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2163,
+              "src": "90:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$2163",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 702,
+            "nodeType": "InheritanceSpecifier",
+            "src": "90:7:5"
+          }
+        ],
+        "contractDependencies": [
+          2163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 705,
+        "linearizedBaseContracts": [
+          705,
+          2163
+        ],
+        "name": "InvestedProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 704,
+            "name": "invested",
+            "nodeType": "VariableDeclaration",
+            "scope": 705,
+            "src": "103:20:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 703,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 706,
+        "src": "61:66:5"
+      }
+    ],
+    "src": "0:129:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-07-05T16:53:10.532Z"
+}
