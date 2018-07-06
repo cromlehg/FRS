@@ -4,20 +4,20 @@ import mintable from './token/mintable';
 import ownable from './token/ownable';
 import standard from './token/standard';
 
-const token = artifacts.require('DreamToken.sol');
+const token = artifacts.require('Token.sol');
 
-contract('DreamToken - BasicToken test', function (accounts) {
+contract('Token - BasicToken test', function (accounts) {
   basic(token, accounts);
 });
-contract('DreamToken - StandardToken test', function (accounts) {
+contract('Token - StandardToken test', function (accounts) {
   standard(token, accounts);
 });
-contract('DreamToken - Mintable test', function (accounts) {
+contract('Token - Mintable test', function (accounts) {
   mintable(token, accounts);
 });
-contract('DreamToken - Ownable test', function (accounts) {
+contract('Token - Ownable test', function (accounts) {
   ownable(token, accounts);
 });
-contract('DreamToken - Additional conditions test', function (accounts) {
+contract('Token - Additional conditions test', function (accounts) {
   additional(token, accounts);
 });

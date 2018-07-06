@@ -14,7 +14,7 @@ export default function (Token, accounts) {
   });
 
   it('should return mintingFinished false after construction', async function () {
-    const mintingFinished = await token.itoMintingFinished();
+    const mintingFinished = await token.mintingFinished();
     assert.equal(mintingFinished, false);
   });
 
@@ -33,7 +33,7 @@ export default function (Token, accounts) {
 
   it('should fail to mint after call to finishMinting', async function () {
     await token.finishMinting({from: accounts[1]}).should.be.fulfilled;
-    const mintingFinished = await token.itoMintingFinished({from: accounts[1]});
+    const mintingFinished = await token.mintingFinished({from: accounts[1]});
     assert.equal(mintingFinished, true);
     await expectThrow(token.mint(accounts[2], 100, {from: accounts[1]}));
   });
