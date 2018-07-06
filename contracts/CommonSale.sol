@@ -22,15 +22,9 @@ contract CommonSale is InvestedProvider, WalletProvider, PercentRateProvider, Re
 
   uint public hardcap;
 
-  bool public lockAfterManuallyMint = true;
-
   modifier isUnderHardcap() {
     require(invested < hardcap);
     _;
-  }
-
-  function setLockAfterManuallyMint(bool newLockAfterManuallyMint) public onlyOwner {
-    lockAfterManuallyMint = newLockAfterManuallyMint;
   }
 
   function setHardcap(uint newHardcap) public onlyOwner {
