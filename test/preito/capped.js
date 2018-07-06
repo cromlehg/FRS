@@ -27,10 +27,10 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setStart(latestTime());
     await crowdsale.setPeriod(this.period);
     await crowdsale.setPrice(this.price);
+    await crowdsale.setSoftcap(this.softcap);
     await crowdsale.setHardcap(this.hardcap);
     await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
     await crowdsale.setWallet(this.wallet);
-    await crowdsale.setPercentRate(this.PercentRate);
   });
 
   it('should accept payments within hardcap', async function () {
