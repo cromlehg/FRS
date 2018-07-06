@@ -24,8 +24,8 @@ contract Configurator is Ownable {
     preITO.setPeriod(48);
     preITO.setPrice(1080000000000000000000);
     preITO.setMinInvestedLimit(100000000000000000);
-    preITO.setHardcap(1000000000000000000000);
-    preITO.setSoftcap(4000000000000000000000);
+    preITO.setSoftcap(1000000000000000000000);
+    preITO.setHardcap(4000000000000000000000);
     preITO.setToken(token);
 
     token.setSaleAgent(preITO);
@@ -41,7 +41,7 @@ contract Configurator is Ownable {
     ito.addMilestone(7, 7);
     ito.addMilestone(7, 5);
     ito.addMilestone(7, 3);
-    ito.setPrice(900);
+    ito.setPrice(900000000000000000000);
     ito.setMinInvestedLimit(100000000000000000);
     ito.setHardcap(32777000000000000000000);
     ito.addWallet(0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770, 10);
