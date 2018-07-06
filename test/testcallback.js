@@ -5,7 +5,7 @@ import {duration} from './helpers/increaseTime';
 
 import callback from './testcallback/callback';
 
-const token = artifacts.require('DreamToken.sol');
+const token = artifacts.require('Token.sol');
 const crowdsale = artifacts.require('ITO.sol');
 const callbacktest = artifacts.require('CallbackTest.sol');
 
@@ -16,13 +16,13 @@ contract('Callback test', function (accounts) {
 
 function config() {
   // variables list based on info from README
-  this.start = unixTime('10 Sep 2018 00:00:00 GMT');
-  this.period = 113;
-  this.price = tokens(6000);
-  this.hardcap = ether(100000);
+  this.start = unixTime('01 Sep 2018 00:00:00 GMT');
+  this.period = 49;
+  this.price = tokens(900);
+  this.hardcap = ether(32777);
   this.minInvestedLimit = ether(0.1);
   this.wallet = '0x98882D176234AEb736bbBDB173a8D24794A3b085';
-  this.PercentRate = 100;
+  this.TeamTokensPercent = 10;
 
   // variables for additional testing convinience
   this.end = this.start + duration.days(this.period);
