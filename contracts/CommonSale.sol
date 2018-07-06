@@ -20,8 +20,6 @@ contract CommonSale is InvestedProvider, WalletProvider, PercentRateProvider, Re
 
   uint public minInvestedLimit;
 
-  MintableToken public token;
-
   uint public hardcap;
 
   bool public lockAfterManuallyMint = true;
