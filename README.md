@@ -67,7 +67,6 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ### Features
 * Manually mint tokens by owner or sale agent at any time until token minting finished. 
 * Manually mint tokens in ether value by owner or sale agent at corresponding sale contract during current sale processing. 
-* Tokens can mint after one year after ITO finished 
 
 ### Crowdsale stages
 
