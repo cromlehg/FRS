@@ -21,7 +21,14 @@
   "devDependencies": {},
   "scripts": {
     "compile": " rm -rf ./build && ./node_modules/.bin/truffle compile",
-    "test": "./scripts/test.sh"
+    "test": "./scripts/test.sh",
+    "flatten-test": "npm run flatten-ito && npm run flatten-preito && npm run flatten-token && npm run flatten-callback && npm run flatten-configurator",
+    "flatten-ito": "./node_modules/.bin/truffle-flattener ./contracts/ITO.sol > ./deploy/ITO.sol",
+    "flatten-preito": "./node_modules/.bin/truffle-flattener ./contracts/PreITO.sol > ./deploy/PreITO.sol",
+    "flatten-token": "./node_modules/.bin/truffle-flattener ./contracts/Token.sol > ./deploy/Token.sol",
+    "flatten-callback": "./node_modules/.bin/truffle-flattener ./contracts/CallbackTest.sol > ./deploy/CallbackTest.sol",
+    "flatten-configurator": "./node_modules/.bin/truffle-flattener ./contracts/TestConfigurator.sol > ./deploy/TestConfigurator.sol",
+    "flatten-contracts": "./node_modules/.bin/truffle-flattener ./contracts/Configurator.sol > ./deploy/Contracts.sol"
   },
   "repository": {
     "type": "git",
