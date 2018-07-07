@@ -74,4 +74,15 @@ export default function (Token, Crowdsale, wallets) {
     assert.equal(balance, 100);
   });
 
+  it('should mint batch', async function () {
+    const owner = await crowdsale.owner();
+    await crowdsale.mintTokensBatch(tokens(100), [wallets[3], wallets[4], wallets[5]], {from: owner}).should.be.fulfilled;
+    const balance3 = await token.balanceOf(wallets[3]);
+    balance3.should.bignumber.equal(tokens(100));
+    const balance4 = await token.balanceOf(wallets[4]);
+    balance4.should.bignumber.equal(tokens(100));
+    const balance5 = await token.balanceOf(wallets[5]);
+    balance5.should.bignumber.equal(tokens(100));
+  });
+
 }
