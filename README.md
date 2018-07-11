@@ -1,4 +1,4 @@
-![FRSCoin](logo.ai "FRSCoin")
+![FRSCoin](logo.png "FRSCoin")
 http://frscoin.com
 
 # Dream Token smart contract
