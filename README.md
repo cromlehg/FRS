@@ -1,4 +1,5 @@
-![FRSCoin](logo.png "FRSCoin")
+![FRSCoin](logo.ai "FRSCoin")
+http://frscoin.com
 
 # Dream Token smart contract
 
@@ -55,9 +56,9 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Team tokens wallet_        : 
-* _Direct mint address_       : 
-* _Contracts manager_         : 
+* _Team tokens wallet_        : 0xA5A5cf5325AeDA4aB32b9b0E0E8fa91aBDb64DdC
+* _Direct mint address_       : 0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406
+* _Contracts manager_         : 0xd8Fe93097F0Ef354fEfee2e77458eeCc19D8D704
 
 ### Links
 1. _Token_ - 
@@ -77,14 +78,14 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Hardcap_                     : 4000 ETH
 * _Period_                      : 48 days
 * _Start_                       : 15 Jul 2018 00:00:00 GMT
-* _Wallet_                      : 
+* _Wallet_                      : 0x89C92383bCF3EecD5180aBd055Bf319ceFD2D516
 
 #### ITO
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 900 Tokens
 * _Hardcap_                     : 32 777 ETH
 * _Start_                       : 1 Sep 2018 00:00:00 GMT
-* _Wallet_                      : 
+* _Wallet_                      : 0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA
  
 ##### Milestones
 1. 7 days, bonus +15%
