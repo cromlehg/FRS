@@ -21,7 +21,7 @@ contract('Configurator integration test', function (accounts) {
   let preito;
   let ito;
 
-  const manager = '0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770';
+  const manager = '0xd8Fe93097F0Ef354fEfee2e77458eeCc19D8D704';
 
   before(async function () {
     // Advance to the next block to correctly read time in the solidity "now" function interpreted by testrpc
@@ -88,9 +88,21 @@ contract('Configurator integration test', function (accounts) {
 
   it ('preITO and ITO should have wallets as described in README', async function () {
     const preitoWallet = await preito.wallet();
-    preitoWallet.should.bignumber.equal('0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770');
+    preitoWallet.should.bignumber.equal('0x89C92383bCF3EecD5180aBd055Bf319ceFD2D516');
     const itoWallet = await ito.wallet();
-    itoWallet.should.bignumber.equal('0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770');
+    itoWallet.should.bignumber.equal('0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA');
+  });
+
+  it ('preITO and ITO should have direct mint agent as described in README', async function () {
+    const preitoAgent = await preito.directMintAgent();
+    preitoAgent.should.bignumber.equal('0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406');
+    const itoAgent = await ito.directMintAgent();
+    itoAgent.should.bignumber.equal('0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406');
+  });
+
+  it ('ITO should have team wallet address as described in README', async function () {
+    const teamWallet = await ito.wallets(0);
+    teamWallet.should.bignumber.equal('0xA5A5cf5325AeDA4aB32b9b0E0E8fa91aBDb64DdC');
   });
 
 });

@@ -32,7 +32,6 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setHardcap(this.hardcap);
     await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
     await crowdsale.setWallet(this.wallet);
-    await crowdsale.setPercentRate(this.PercentRate);
   });
 
   it('crowdsale should be a saleAgent for token', async function () {

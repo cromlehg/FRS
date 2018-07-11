@@ -45,7 +45,7 @@ function config() {
   this.price = tokens(900);
   this.hardcap = ether(32777);
   this.minInvestedLimit = ether(0.1);
-  this.wallet = '0x98882D176234AEb736bbBDB173a8D24794A3b085';
+  this.wallet = '0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA';
   this.TeamTokensPercent = 10;
 
   // variables for additional testing convinience
