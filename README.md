@@ -1,7 +1,7 @@
-![FRSCoin](logo.png "FRSCoin")
+![FRS coin](logo.png "FRS coin")
 http://frscoin.com
 
-# FRS Coin smart contract
+# FRS coin smart contract
 
 * _Standard_        : [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 * _[Name](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#name)_            : FRSCoin
